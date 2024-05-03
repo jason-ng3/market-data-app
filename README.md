@@ -3,8 +3,10 @@
   - `git clone https://github.com/jason-ng3/market-data-app.git`
 3. Add your MongoDB Atlas URI to an `.env` file in the `market-data-app/server` directory.
   - `MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.<cluster-shard>.mongodb.net/<database>?retryWrites=true&w=majority`
-4. Start the Express web server from the `market-data-app/server` directory.
+4. Install dependencies & start the Express web server from the `market-data-app/server` directory.
+  - `npm install`
   - `npm run start`
-2. Start the React dev server from the `market-data-app/react-frontend` directory.
+2. Install dependencies & start the React server from the `market-data-app/react-frontend` directory.
+  - `npm install`
   - `npm run dev`
-3. From your web browser, navigate to `http://localhost:5173/` to view the React frontend.
+3. From your web browser, navigate to `http://localhost:5173` to view the React frontend.
