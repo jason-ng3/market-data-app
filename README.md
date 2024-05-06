@@ -10,3 +10,5 @@
   - `npm install`
   - `npm run dev`
 3. From your web browser, navigate to `http://localhost:5173` to view the React frontend.
+
+Note: The OHLCV data has not been parsed and processed. The React frontend only shows the data dumped to the MongoDB database for each program run (timestamp of the program run and the data corresponding to it).
