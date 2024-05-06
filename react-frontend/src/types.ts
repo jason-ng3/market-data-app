@@ -1,16 +1,9 @@
-// Interface for MarketData item
+// Type for marketData state fetched from server
+
 export interface MarketDataItem {
   _id: string;
   timestamp: string;
-  data: {
-    open: number;
-    high: number;
-    low: number;
-    close: number;
-    volume: number;
-  };
-  __v: number;
+  data: any;
 }
 
-// Type for marketData state fetched from server
 export type MarketData = MarketDataItem[];

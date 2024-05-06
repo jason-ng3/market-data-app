@@ -25,22 +25,14 @@ const App = () => {
         <TableHead>
           <TableRow>
             <TableCell>Timestamp</TableCell>
-            <TableCell>Open</TableCell>
-            <TableCell>High</TableCell>
-            <TableCell>Low</TableCell>
-            <TableCell>Close</TableCell>
-            <TableCell>Volume</TableCell>
+            <TableCell>Data</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {marketData.map((item: MarketDataItem) => (
             <TableRow key={item._id} sx={{ '&:nth-of-type(odd)': { backgroundColor: '#f9f9f9' } }}>
               <TableCell>{new Date(item.timestamp).toLocaleString()}</TableCell>
-              <TableCell>{item.data.open}</TableCell>
-              <TableCell>{item.data.high}</TableCell>
-              <TableCell>{item.data.low}</TableCell>
-              <TableCell>{item.data.close}</TableCell>
-              <TableCell>{item.data.volume}</TableCell>
+              <TableCell>{JSON.stringify(item.data, null, 2)}</TableCell>
             </TableRow>
           ))}
         </TableBody>
